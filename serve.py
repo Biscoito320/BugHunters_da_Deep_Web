@@ -35,7 +35,7 @@ def main():
   print("Iniciou o servidor de bate-papo")
 
   try:
-      server.bind(("localhost", 7777))
+      server.bind(("0.0.0.0", 7777))
       server.listen()
   except:
       return print('\nNão foi possível iniciar o servidor!\n')
