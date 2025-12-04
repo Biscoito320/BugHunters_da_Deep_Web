@@ -203,7 +203,7 @@ def main():
             break
 
         with clients_lock:
-            clients.append((client, addr))
+             clients.append((client, addr, None)) 
 
         print(f'Cliente conectado com sucesso. IP: {addr}')
 
